@@ -1,7 +1,7 @@
 #PF-Exer-26
 
 def factorial(number):
-   
+    #remove pass and write your logic to find and return the factorial of given number
     fact=1
     if (number==0):
         return 1
@@ -11,7 +11,7 @@ def factorial(number):
     return fact
 
 def find_strong_numbers(num_list):
-  
+     #remove pass and write your logic to find and return the list of strong numbers from the given list
     res_list=[]*len(num_list)
     temp_list=[0]*len(num_list)
     for i in range(len(num_list)):
@@ -26,10 +26,8 @@ def find_strong_numbers(num_list):
     for i in range(len(num_list)):
         if(num_list[i]==temp_list[i]):
             res_list.append(num_list[i])
-    if len(res_list)==0:
-        return (-1)
-    else:    
-        return res_list
+      
+    return res_list
 
 num_list=[100,20,40]
 strong_num_list=find_strong_numbers(num_list)
