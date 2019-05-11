@@ -36,7 +36,7 @@ def nearest_palindrome(number):
             if (result<number):
                 nearest_palindrome(number)
 
-    return(res_list[-1])
+    return(res_list[0])
 
 
 
