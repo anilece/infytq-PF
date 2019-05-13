@@ -2,15 +2,14 @@
 def find_pairs_of_numbers(num_list,n):
     count=0
     for i in range(len(num_list)):
-        temp=i
-        for j in range(len(num_list)):
-            if (num_list[i]+num_list[j]==n) and (i!=j):
+       
+        for j in range(i+1,len(num_list)):
+            if (num_list[i]+num_list[j]==n):
                 count+=1
-                num_list[i]=0
-                num_list[j]=0
+                
                 
     return(count)
-    
+    #Remove pass and write your logic here
 
 num_list=[1, 2, 4, 5, 6]
 n=6
